@@ -17,7 +17,7 @@
     <header class="sidebar">
       <div class="sidebar-head">
         <div class="avatar">
-          <img src="assets/photo.jpg" alt="Vivek Kumar Patel" />
+          <img src="assets/photo.jpg?v=2" alt="Vivek Kumar Patel" />
         </div>
         <p class="kicker">Available for backend roles</p>
         <h1>Vivek Kumar Patel</h1>
@@ -37,7 +37,6 @@
         <ol>
           <li><a class="active" href="#about"><span class="bar"></span>About</a></li>
           <li><a href="#experience"><span class="bar"></span>Experience</a></li>
-          <li><a href="#projects"><span class="bar"></span>Projects</a></li>
           <li><a href="#skills"><span class="bar"></span>Skills</a></li>
           <li><a href="#people"><span class="bar"></span>How I work</a></li>
           <li><a href="#education"><span class="bar"></span>Education</a></li>
@@ -117,51 +116,8 @@
         </article>
       </section>
 
-      <section id="projects">
-        <h2><span>03.</span> Selected work</h2>
-        <p class="prose">Employer code, so there is no public demo. Each card is work I personally shipped — not every connector in the company repos.</p>
-        <div class="grid">
-          <article class="card">
-            <h3>Reactive persistence library</h3>
-            <p class="meta">Turinton · turinton-common-library / reactive-database</p>
-            <p>Shared fetch and write path for client datasources. Connection pooling, SQL handlers, and catalog-style metadata so six services stop opening their own ConnectionFactory.</p>
-            <div class="tags"><span class="tag">WebFlux</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span></div>
-          </article>
-          <article class="card">
-            <h3>Email data connector</h3>
-            <p class="meta">Turinton · insights-email-data-connector</p>
-            <p>Mailbox connectors for Gmail and Outlook. I added EWS listFolders, Microsoft OAuth token exchange, SSO on test-connection / list-folders / fetch, and Kafka publish after fetch, plus the matching tests.</p>
-            <div class="tags"><span class="tag">EWS</span><span class="tag">OAuth</span><span class="tag">Kafka</span><span class="tag">JUnit</span></div>
-          </article>
-          <article class="card">
-            <h3>Mongo catalog sample values API</h3>
-            <p class="meta">Turinton · insights-dataconnector-mongo</p>
-            <p>v2 sampleValues endpoint: reactive reads from the configured Mongo datasource so the catalog can show representative field values without a one-off query path.</p>
-            <div class="tags"><span class="tag">MongoDB</span><span class="tag">WebFlux</span><span class="tag">Catalog API</span></div>
-          </article>
-          <article class="card">
-            <h3>NYAI persistence execute API</h3>
-            <p class="meta">NYAI · nyai-persistence-service</p>
-            <p>Functional router I authored that posts parameterized queries to a reactive repository. Downstream consent and notification services stay free of JDBC.</p>
-            <div class="tags"><span class="tag">R2DBC</span><span class="tag">Java 21</span><span class="tag">Spring Boot 3</span></div>
-          </article>
-          <article class="card">
-            <h3>Consent notification pipeline</h3>
-            <p class="meta">NYAI · nyai-dpdpa-notification-service</p>
-            <p>Hexagonal WebFlux service: batch PII fetch, SMTP send, audit rows, retry of failed transactions, dashboard and recipient APIs, and JWT cookie guards on the consent screens.</p>
-            <div class="tags"><span class="tag">SMTP</span><span class="tag">Audit</span><span class="tag">Ports &amp; adapters</span></div>
-          </article>
-          <article class="card">
-            <h3>Find-consent-by-id API</h3>
-            <p class="meta">NYAI · nyai-dpdpa-consent-api</p>
-            <p>External-facing consent lookup for customer integrations, Spring WebFlux on Java 21. Pair this with the notification service when talking through DPDPA flows.</p>
-            <div class="tags"><span class="tag">WebFlux</span><span class="tag">Customer API</span></div>
-          </article>
-        </div>
-      </section>
-
       <section id="skills">
-        <h2><span>04.</span> Skills</h2>
+        <h2><span>03.</span> Skills</h2>
         <div class="skill-groups">
           <div class="skill-group">
             <h3>Languages</h3>
@@ -191,7 +147,7 @@
       </section>
 
       <section id="people">
-        <h2><span>05.</span> How I work</h2>
+        <h2><span>04.</span> How I work</h2>
         <p class="prose">These are habits I can point to in shipped code: shared contracts, tests, and the boundaries other teams consume.</p>
         <div class="soft-grid">
           <article class="card">
@@ -200,7 +156,7 @@
           </article>
           <article class="card">
             <h3>Tests as the handoff</h3>
-            <p>Email connector and catalog changes shipped with JUnit coverage for new OAuth, folder-list, and sampleValues paths so the next person can change the protocol without guessing.</p>
+            <p>Connector and persistence changes shipped with JUnit coverage so the next person can change a protocol without guessing.</p>
           </article>
           <article class="card">
             <h3>Production-minded details</h3>
@@ -222,7 +178,7 @@
       </section>
 
       <section id="education">
-        <h2><span>06.</span> Education</h2>
+        <h2><span>05.</span> Education</h2>
         <article class="job">
           <h3>B.Sc. Mathematics (Hons.)</h3>
           <p class="meta">Lingaya's Vidyapeeth, Faridabad · Jul 2019 – Jun 2022 · CGPA 8.74 / 10</p>
@@ -234,7 +190,7 @@
       </section>
 
       <section id="contact">
-        <h2><span>07.</span> Contact</h2>
+        <h2><span>06.</span> Contact</h2>
         <p class="prose">Open to Java backend roles in Bengaluru. Email or LinkedIn is the fastest path.</p>
         <div class="cta-row">
           <a class="btn solid" href="mailto:vivekkrpatel2442@gmail.com">vivekkrpatel2442@gmail.com</a>
