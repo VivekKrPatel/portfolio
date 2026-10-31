@@ -1,3 +1,6 @@
-name = "vivek-kumar-patel-portfolio"
+name = "vivekkumarpatel"
 compatibility_date = "2026-10-31"
-pages_build_output_dir = "."
+
+[assets]
+directory = "."
+html_handling = "auto-trailing-slash"

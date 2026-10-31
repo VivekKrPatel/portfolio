@@ -1,0 +1,6 @@
+.git
+.gitignore
+HANDOFF.md
+wrangler.toml
+.assetsignore
+README.md
