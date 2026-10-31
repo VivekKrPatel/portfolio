@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0a192f" />
+  <title>Vivek Kumar Patel — Java Backend Engineer</title>
+  <meta name="description" content="Java backend engineer in Bengaluru. Spring Boot, Spring WebFlux, Kafka, PostgreSQL, Redis. Production work on healthcare prior-auth, AI data assistants, and DPDPA consent systems." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <div class="layout">
+    <header class="sidebar">
+      <div class="sidebar-head">
+        <div class="avatar">
+          <img src="assets/photo.jpg" alt="Vivek Kumar Patel" />
+        </div>
+        <p class="kicker">Available for backend roles</p>
+        <h1>Vivek Kumar Patel</h1>
+        <p class="role">Java Backend Engineer · Bengaluru</p>
+        <p class="lede">I build Spring Boot and WebFlux services that other teams can actually reuse: data access, connectors, and event-driven workflows for healthcare and enterprise data products.</p>
+        <div class="stack" aria-label="Core stack">
+          <span class="chip">Java</span>
+          <span class="chip">Spring Boot</span>
+          <span class="chip">Spring WebFlux</span>
+          <span class="chip">Kafka</span>
+          <span class="chip">PostgreSQL</span>
+          <span class="chip">Redis</span>
+        </div>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      </div>
+      <nav class="desktop-nav" id="site-nav" aria-label="Primary">
+        <ol>
+          <li><a class="active" href="#about"><span class="bar"></span>About</a></li>
+          <li><a href="#experience"><span class="bar"></span>Experience</a></li>
+          <li><a href="#projects"><span class="bar"></span>Projects</a></li>
+          <li><a href="#skills"><span class="bar"></span>Skills</a></li>
+          <li><a href="#people"><span class="bar"></span>How I work</a></li>
+          <li><a href="#education"><span class="bar"></span>Education</a></li>
+          <li><a href="#contact"><span class="bar"></span>Contact</a></li>
+        </ol>
+      </nav>
+      <div class="cta-row">
+        <a class="btn solid" href="https://www.linkedin.com/in/vivek-kumar-patel/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a class="btn" href="https://github.com/VivekKrPatel" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="btn" href="Vivek_Kumar_Patel_Resume.pdf">Resume</a>
+      </div>
+      <p class="social">InspironLabs · Sep 2023 – Present</p>
+    </header>
+
+    <main id="content">
+      <section id="about">
+        <h2><span>01.</span> About</h2>
+        <p class="prose">I am a Java backend engineer with 3+ years at InspironLabs. Recruiters scanning this page should see the role, the stack, and the outcomes in the first screen: Spring Boot microservices, reactive data access, Kafka, and production work for US healthcare and AI-powered enterprise data products.</p>
+        <p class="prose">The numbers below are from shipped work, not estimates I invented for this site. Client source stays private; the case studies describe what I owned.</p>
+        <div class="metrics">
+          <div class="metric"><strong>600ms → 200ms</strong><span>Average query time after Redis caching across 6 downstream repositories</span></div>
+          <div class="metric"><strong>~40% less</strong><span>Duplication after replacing 12+ ConnectionFactory calls with a shared persistence library</span></div>
+          <div class="metric"><strong>100K+ / day</strong><span>Kafka events on prior-authorization pipelines serving 50,000+ patients</span></div>
+        </div>
+      </section>
+
+      <section id="experience">
+        <h2><span>02.</span> Experience</h2>
+        <article class="job">
+          <h3>Software Engineer, Backend · InspironLabs</h3>
+          <p class="meta">Sep 2023 – Present · Bengaluru, Karnataka</p>
+          <p class="prose">Client work across three products. Reverse chronological, same order as the current resume.</p>
+        </article>
+        <article class="job">
+          <h3>Elevanta — outbound engagement reporting</h3>
+          <p class="meta">Most recent engagement</p>
+          <ul>
+            <li>Designed a webhook pipeline across Clay, Smartlead, n8n, and HubSpot so sends, opens, replies, and bounces land on the contact record.</li>
+            <li>Built a Python backfill tool that reuses live field-computation logic when webhook runs miss historical contacts.</li>
+            <li>Automated about 70% of the engagement-sync process through n8n.</li>
+          </ul>
+          <div class="tags"><span class="tag">Python</span><span class="tag">n8n</span><span class="tag">HubSpot</span><span class="tag">Webhooks</span></div>
+        </article>
+        <article class="job">
+          <h3>Turinton — AI enterprise data assistant</h3>
+          <p class="meta">Spring WebFlux · PostgreSQL · Redis</p>
+          <ul>
+            <li>Developed a reusable Java persistence library with fetch and write REST APIs for parameterized PostgreSQL queries against configured client datasources.</li>
+            <li>Centralized reactive data access, replacing 12+ direct ConnectionFactory calls across 6 Spring Boot repositories.</li>
+            <li>Cached query results in Redis for those repositories, cutting average query time from about 600ms to about 200ms.</li>
+            <li>Implemented Gmail and Microsoft Outlook mailbox connectors to retrieve folders and messages, including EWS folder listing and Microsoft OAuth token exchange.</li>
+            <li>Wrote unit tests for 15+ persistence and connector classes with JUnit 5 and Mockito.</li>
+          </ul>
+          <div class="tags"><span class="tag">Java</span><span class="tag">Spring WebFlux</span><span class="tag">R2DBC</span><span class="tag">Redis</span><span class="tag">Kafka</span></div>
+        </article>
+        <article class="job">
+          <h3>NYAI — DPDPA consent and notifications</h3>
+          <p class="meta">DPDPA product · Java 21 · WebFlux</p>
+          <ul>
+            <li>Designed REST APIs and schema for the data-breach module, modeling principal relationships for DPDPA-aligned reporting.</li>
+            <li>Authored the persistence-service execute route that runs parameterized queries through a reactive repository — the shared data-access path other NYAI services call.</li>
+            <li>On the notification service: consent-recipient APIs, dashboard summary queries, duplicate-dispatch guards, SMTP status polling, and a shared access-token guard instead of one-off auth checks.</li>
+          </ul>
+          <div class="tags"><span class="tag">Java 21</span><span class="tag">WebFlux</span><span class="tag">Clean architecture</span><span class="tag">DPDPA</span></div>
+        </article>
+        <article class="job">
+          <h3>Optum — prior authorization</h3>
+          <p class="meta">US healthcare platform</p>
+          <ul>
+            <li>Architected 5+ Java and Spring Boot microservices for a platform serving 50,000+ patients, reducing API latency by 30%.</li>
+            <li>Built Apache Kafka pipelines processing 100K+ daily events, removing bottlenecks across 3 downstream services.</li>
+            <li>Integrated Camunda BPM to automate prior-authorization workflows, cutting manual processing time by 35%. The rule engine processes 10,000+ requests a day at 99.9% uptime.</li>
+            <li>Led migration of 2 APIs from NestJS to Spring Boot for a US government healthcare platform.</li>
+            <li>Delivered HIPAA-consent popup and communication-card UI bound to API responses.</li>
+          </ul>
+          <div class="tags"><span class="tag">Spring Boot</span><span class="tag">Kafka</span><span class="tag">Camunda BPM</span><span class="tag">Kubernetes</span><span class="tag">HIPAA</span></div>
+        </article>
+      </section>
+
+      <section id="projects">
+        <h2><span>03.</span> Selected work</h2>
+        <p class="prose">Employer code, so there is no public demo. Each card is work I personally shipped — not every connector in the company repos.</p>
+        <div class="grid">
+          <article class="card">
+            <h3>Reactive persistence library</h3>
+            <p class="meta">Turinton · turinton-common-library / reactive-database</p>
+            <p>Shared fetch and write path for client datasources. Connection pooling, SQL handlers, and catalog-style metadata so six services stop opening their own ConnectionFactory.</p>
+            <div class="tags"><span class="tag">WebFlux</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span></div>
+          </article>
+          <article class="card">
+            <h3>Email data connector</h3>
+            <p class="meta">Turinton · insights-email-data-connector</p>
+            <p>Mailbox connectors for Gmail and Outlook. I added EWS listFolders, Microsoft OAuth token exchange, SSO on test-connection / list-folders / fetch, and Kafka publish after fetch, plus the matching tests.</p>
+            <div class="tags"><span class="tag">EWS</span><span class="tag">OAuth</span><span class="tag">Kafka</span><span class="tag">JUnit</span></div>
+          </article>
+          <article class="card">
+            <h3>Mongo catalog sample values API</h3>
+            <p class="meta">Turinton · insights-dataconnector-mongo</p>
+            <p>v2 sampleValues endpoint: reactive reads from the configured Mongo datasource so the catalog can show representative field values without a one-off query path.</p>
+            <div class="tags"><span class="tag">MongoDB</span><span class="tag">WebFlux</span><span class="tag">Catalog API</span></div>
+          </article>
+          <article class="card">
+            <h3>NYAI persistence execute API</h3>
+            <p class="meta">NYAI · nyai-persistence-service</p>
+            <p>Functional router I authored that posts parameterized queries to a reactive repository. Downstream consent and notification services stay free of JDBC.</p>
+            <div class="tags"><span class="tag">R2DBC</span><span class="tag">Java 21</span><span class="tag">Spring Boot 3</span></div>
+          </article>
+          <article class="card">
+            <h3>Consent notification pipeline</h3>
+            <p class="meta">NYAI · nyai-dpdpa-notification-service</p>
+            <p>Hexagonal WebFlux service: batch PII fetch, SMTP send, audit rows, retry of failed transactions, dashboard and recipient APIs, and JWT cookie guards on the consent screens.</p>
+            <div class="tags"><span class="tag">SMTP</span><span class="tag">Audit</span><span class="tag">Ports &amp; adapters</span></div>
+          </article>
+          <article class="card">
+            <h3>Find-consent-by-id API</h3>
+            <p class="meta">NYAI · nyai-dpdpa-consent-api</p>
+            <p>External-facing consent lookup for customer integrations, Spring WebFlux on Java 21. Pair this with the notification service when talking through DPDPA flows.</p>
+            <div class="tags"><span class="tag">WebFlux</span><span class="tag">Customer API</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2><span>04.</span> Skills</h2>
+        <div class="skill-groups">
+          <div class="skill-group">
+            <h3>Languages</h3>
+            <div class="pills"><span class="pill">Java</span><span class="pill">Python</span><span class="pill">JavaScript / React (working knowledge)</span></div>
+          </div>
+          <div class="skill-group">
+            <h3>Backend</h3>
+            <div class="pills"><span class="pill">Spring Boot</span><span class="pill">Spring WebFlux</span><span class="pill">REST</span><span class="pill">JUnit 5</span><span class="pill">Mockito</span></div>
+          </div>
+          <div class="skill-group">
+            <h3>Data &amp; events</h3>
+            <div class="pills"><span class="pill">PostgreSQL</span><span class="pill">Redis</span><span class="pill">Apache Kafka</span><span class="pill">MongoDB</span></div>
+          </div>
+          <div class="skill-group">
+            <h3>Platform</h3>
+            <div class="pills"><span class="pill">Docker</span><span class="pill">Kubernetes</span><span class="pill">Jenkins</span><span class="pill">Red Hat OpenShift</span><span class="pill">Camunda BPM</span></div>
+          </div>
+          <div class="skill-group">
+            <h3>Observability</h3>
+            <div class="pills"><span class="pill">Splunk</span><span class="pill">SonarQube</span></div>
+          </div>
+          <div class="skill-group">
+            <h3>AI tools</h3>
+            <div class="pills"><span class="pill">GitHub Copilot</span><span class="pill">Claude</span><span class="pill">Cursor</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="people">
+        <h2><span>05.</span> How I work</h2>
+        <p class="prose">These are habits I can point to in shipped code: shared contracts, tests, and the boundaries other teams consume.</p>
+        <div class="soft-grid">
+          <article class="card">
+            <h3>Ownership of shared contracts</h3>
+            <p>The persistence library and NYAI execute API exist so other repositories do not copy ConnectionFactory code. That is documentation, review, and compatibility, not a solo feature dump.</p>
+          </article>
+          <article class="card">
+            <h3>Tests as the handoff</h3>
+            <p>Email connector and catalog changes shipped with JUnit coverage for new OAuth, folder-list, and sampleValues paths so the next person can change the protocol without guessing.</p>
+          </article>
+          <article class="card">
+            <h3>Production-minded details</h3>
+            <p>Replaced generic RuntimeException with typed errors, skipped duplicate consent dispatches, and moved handlers onto a shared access-token guard instead of one-off checks.</p>
+          </article>
+          <article class="card">
+            <h3>Client-facing integrations</h3>
+            <p>Mailbox OAuth, HubSpot webhooks, and HIPAA UI bound to API responses — the work sits at the boundary between backend contracts and the people who consume them.</p>
+          </article>
+          <article class="card" id="mentoring">
+            <h3>Mentoring</h3>
+            <p>I help 3–5 junior developers at a time: unpacking the problem statement, walking through a low-level design, and unblocking implementation doubts on the feature they are building.</p>
+          </article>
+          <article class="card" id="hobbies">
+            <h3>Off the clock</h3>
+            <p>Cooking.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="education">
+        <h2><span>06.</span> Education</h2>
+        <article class="job">
+          <h3>B.Sc. Mathematics (Hons.)</h3>
+          <p class="meta">Lingaya's Vidyapeeth, Faridabad · Jul 2019 – Jun 2022 · CGPA 8.74 / 10</p>
+        </article>
+        <article class="job">
+          <h3>AWS Partner: Accreditation (Technical)</h3>
+          <p class="meta">Amazon Web Services</p>
+        </article>
+      </section>
+
+      <section id="contact">
+        <h2><span>07.</span> Contact</h2>
+        <p class="prose">Open to Java backend roles in Bengaluru. Email or LinkedIn is the fastest path.</p>
+        <div class="cta-row">
+          <a class="btn solid" href="mailto:vivekkrpatel2442@gmail.com">vivekkrpatel2442@gmail.com</a>
+          <a class="btn" href="tel:+917701852442">+91 77018 52442</a>
+          <a class="btn" href="https://www.linkedin.com/in/vivek-kumar-patel/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="btn" href="https://github.com/VivekKrPatel" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </section>
+
+      <footer>
+        <p>Static site for Cloudflare Pages. Design draws from Brittany Chiang’s recruiter-first sidebar and Lee Robinson’s short positioning. Metrics match the resume used in prior ATS work. Employer repositories stay private.</p>
+      </footer>
+    </main>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
